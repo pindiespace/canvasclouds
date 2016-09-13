@@ -1,0 +1,48 @@
+/* styles for canvas demo */
+
+body {
+	margin:0;
+	border:0;
+	padding:0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* make the visible canvas fill the screen, and 
+underly the markup*/
+.canvas-bkgnd {
+	
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -1;
+
+}
+
+
+/* offscreen drawing area. Note that 
+canvas sizes are set in HTML to match the 
+sizes in JavaScript */
+#canvas1, #canvas3 {
+
+	display:none;
+
+}
+
+/* visible canvas */
+#canvas2 {
+
+	width:100%;
+
+}
+
+/* put all markup we want above the canvas into 
+the <main> tag */
+#main {
+
+	z-index:100;
+	color:white;
+
+}
