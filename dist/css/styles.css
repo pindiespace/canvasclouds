@@ -1,6 +1,7 @@
 /* styles for canvas demo */
 
 body {
+	font-family: sans-serif;
 	margin:0;
 	border:0;
 	padding:0;
@@ -44,5 +45,37 @@ the <main> tag */
 
 	z-index:100;
 	color:white;
+}
+
+#content article {
+	font-size:120%;
+	background-color:#333;
+	border-top: 20px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+  border-image-slice: 1;
+}
+
+#content h2 {
+
+	display: none;
 
 }
+
+#content article h3 {
+	width:100%;
+	margin:0;
+	padding:0;
+	font-size: 36px;
+	text-align:right;
+	position: relative;
+	top: -1.5em;
+	right: 0.2em;
+}
+
+#content article p {
+	padding:0.2em;
+	margin-top:0;
+}
+
